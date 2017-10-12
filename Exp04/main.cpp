@@ -161,7 +161,7 @@ void isCentrosymmetric(CharacterSingleLinkedList headPointerOfCSLL, SequentialSt
     CharacterSingleLinkedList iterator = headPointerOfCSLL->next;
     if (iterator != nullptr) {
         int lengthOfCSLL = getLengthOf(headPointerOfCSLL);
-        int count = floor(lengthOfCSLL / 2);
+        int count = (int) floor(lengthOfCSLL / 2);
         for (int i = 0; i < count; i++) {
             push(sequentialStack, iterator->data);
             iterator = iterator->next;
@@ -339,16 +339,15 @@ int main() {
     createSequentialStack(sequentialStack);
 
     // Exp 04-01
-//    cout << "<Exp 04-01>" << endl;
-//    CharacterSingleLinkedList headPointerOfCSLL;
-//    createAndInitCSLL(headPointerOfCSLL);
-//    cout << "Original characters: ";
-//    displayCSLL(headPointerOfCSLL);
-//    cout << "Result: ";
-//    isCentrosymmetric(headPointerOfCSLL, sequentialStack);
+    cout << "<Exp 04-01>" << endl;
+    CharacterSingleLinkedList headPointerOfCSLL;
+    createAndInitCSLL(headPointerOfCSLL);
+    cout << "Original characters: ";
+    displayCSLL(headPointerOfCSLL);
+    isCentrosymmetric(headPointerOfCSLL, sequentialStack);
 
     // Exp 04-02
-//    exp04_02(sequentialStack);
+    exp04_02(sequentialStack);
 
     // Exp 04-03
     cout << "<Exp 04-03>" << endl;
