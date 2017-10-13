@@ -34,6 +34,8 @@ void clearTree(BinaryTree &binaryTree);
 bool isTreeEmpty(BinaryTree binaryTree);
 
 // Exp05-02:
+
+// Function implementation:
 void createAndInitTree(BinaryTree &binaryTree) {
     char dataInput;
     cin >> dataInput;
@@ -80,7 +82,6 @@ void getTreeDepthOfRightOffspring(BinaryTree binaryTree) {
         getTreeDepthOfRightOffspring(binaryTree->rightChild);
     }
 }
-// Function implementation:
 
 int main() {
     BinaryTree binaryTree;
